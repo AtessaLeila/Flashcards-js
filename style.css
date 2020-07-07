@@ -75,6 +75,9 @@ body {
 
   ul li {
       margin-top: 20px;
+      margin-left: 6px;
+      margin-right: 15px;
+      text-align: left;
   }
 
   
@@ -126,6 +129,7 @@ body {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+    
   }
 
 
