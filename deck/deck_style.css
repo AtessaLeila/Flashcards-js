@@ -9,7 +9,7 @@ body {
 
 .sidenav {
   height: 100%;
-  width: 250px;
+  width: 255px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -91,7 +91,8 @@ ul li {
 }
 
 .container {
-  margin-left: 250px;
+  margin-left: 290px;
+  
 }
 
 .flip-card {

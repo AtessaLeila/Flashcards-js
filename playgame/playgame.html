@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="playgame.css">
+</head>
+
+<!-- <body onload="javascript:start()"> -->
+
+<body>
+    <div class="sidenav">
+        <a onclick="howToPlay()" href="#">Home</a>
+        <a onclick="deck()" href="#">Deck of Cards</a>
+        <a onclick="playGame()" href="#">Play Game</a>
+        <h2>Score</h2>
+        <h2 class="result">0</h2>
+        <!-- <button class="reset" onclick="resetGame()">Reset</button> -->
+        <!-- <h3 class="keyboard">Keyboard</h3>
+        <ul class="shortcuts">
+            <li>Flip Card: Spacebar</li>
+            <li>Know Answer: k</li>
+            <li>Don't Know Answer: d</li>
+        </ul> -->
+    </div>
+    <div class="container">
+        <h1>True or False</h1>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question1">
+                            <p>Mercury is the second smallest planet in the Solar System</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="answer">False</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="btn-1" data-question="0">True</button>
+                <button class="btn-2 add5" data-question="0" onclick="add1()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question2">
+                            <p>Venus is hotter than Mercury despite being further away from the Sun</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="btn-1 add5" data-question="1" onclick="add1()">True</button>
+                <button class="btn-2" data-question="1">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question3">
+                            <p>The Earth's rotation is gradually speeding up</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <button class="btn-1" data-question="2">True</button>
+                <button class="btn-2" data-question="2" onclick="add1()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question4">
+                            <p>Mercury is home to the tallest mountain in the solar system</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" data-question="3">True</button>
+            <button class="btn-2" data-question="3" onclick="add1()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question5">
+                            <p>Saturn Is The Fastest Spinning Planet In The Solar System</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" data-question="4">True</button>
+            <button class="btn-2" data-question="4" onclick="add1()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question6">
+                            <p>Jupiter Has 67 Moons</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" data-question="5" onclick="add1()">True</button>
+            <button class="btn-2" data-question="5">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question7">
+                            <p>Saturn is a flattened ball because it spins so quickly</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" data-question="6" onclick="add1()">True</button>
+            <button class="btn-2" data-question="6">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question8">
+                            <p>Uranus is known as the “sideways planet”</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" data-question="7" onclick="add1()">True</button>
+            <button class="btn-2" data-question="7">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question question9">
+                            <p>Neptune is the Coldest Planet in the Solar System</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" data-question="8" onclick="add1()">True</button>
+            <button class="btn-2" data-question="8">False</button>
+        </div>
+        <!-- <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question10">
+                            <p>Neptune was the first planet found using a telescope</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn10()">True</button>
+            <button class="btn-2" onclick="falseBtn10()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question11">
+                            <p>Pluto is one third water</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn11()">True</button>
+            <button class="btn-2" onclick="falseBtn11()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question12">
+                            <p>Jupiter's Surface Gravity is Almost Earth-like</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn12()">True</button>
+            <button class="btn-2" onclick="falseBtn12()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question13">
+                            <p>Pluto is a planet in our Solar System</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn13()">True</button>
+            <button class="btn-2" onclick="falseBtn13()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question14">
+                            <p>Jupiter is the second-largest in the Solar System</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>False</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn14()">True</button>
+            <button class="btn-2" onclick="falseBtn14()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question15">
+                            <p>A year on Mercury is less than three months</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn15()">True</button>
+            <button class="btn-2" onclick="falseBtn15()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="flip-card-front">
+                        <div class="question16">
+                            <p>Neptune's Surface Gravity is Almost Earth-like</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn16()">True</button>
+            <button class="btn-2" onclick="falseBtn16()">False</button>
+        </div>
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner" onclick="flip(event)">
+                    <div class="question17">
+                        <div class="flip-card-front">
+                            <p>Mars has the largest dust storms in the solar system</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>True</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-1" onclick="trueBtn17()">True</button>
+            <button class="btn-2" onclick="falseBtn17()">False</button>
+        </div> -->
+
+
+
+    </div>
+
+
+
+    <script src="../index/index.js"></script>
+    <script src="playgame.js"></script>
+
+</body>
+
+</html>
