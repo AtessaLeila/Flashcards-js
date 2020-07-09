@@ -44,18 +44,67 @@ var total;
 total = 0;
 
 function add1() {
+    document.querySelector('.question1').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add2() {
+    document.querySelector('.question2').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add3() {
+    document.querySelector('.question3').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add4() {
+    document.querySelector('.question4').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add5() {
+    document.querySelector('.question5').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add6() {
+    document.querySelector('.question6').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add7() {
+    document.querySelector('.question7').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add8() {
+    document.querySelector('.question8').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+}
+
+function add9() {
+    document.querySelector('.question9').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
 }
 
 
-answers = [[false, true], [true, false], [false, true], [false, true], [true, false], [false, true], [true, false], [true, false], [true, false]]
+// answers = [[false, true], [true, false], [false, true], [false, true], [true, false], [false, true], [true, false], [true, false], [true, false]]
 
 
 
-for (let i = 0; i < questions.length; i++) {
-    console.log(questions[i])
-}
+// for (let i = 0; i < questions.length; i++) {
+//     console.log(questions[i])
+// }
 
 
 // for (let i = 0; i < trueBtns.length; i++) {
@@ -154,7 +203,23 @@ for (let i = 0; i < questions.length; i++) {
 // }
 // resetGame()
 
+// var slideIndex = 1;
+// showDivs(slideIndex);
 
+// function plusDivs(n) {
+//     showDivs(slideIndex += n);
+// }
+
+// function showDivs(n) {
+//     var i;
+//     var x = document.querySelectorAll(".card");
+//     if (n > x.length) { slideIndex = 1 }
+//     if (n < 1) { slideIndex = x.length }
+//     for (i = 0; i < x.length; i++) {
+//         x[i].style.display = "none";
+//     }
+//     x[slideIndex - 1].style.display = "block";
+// }
 
 
 
@@ -163,18 +228,6 @@ for (let i = 0; i < questions.length; i++) {
 
 function trueBtn1() {
     document.querySelector('.question1').innerHTML = "That is not correct";
-    var a = "false"
-}
-
-function falseBtn1() {
-    document.querySelector('.question1').innerHTML = "That is correct";
-    var b = "true"
-}
-
-
-function trueBtn2() {
-    document.querySelector('.question2').innerHTML = "That is correct";
-
 }
 
 function falseBtn2() {
@@ -186,57 +239,33 @@ function trueBtn3() {
     document.querySelector('.question3').innerHTML = "That is not correct";
 }
 
-function falseBtn3() {
-    document.querySelector('.question3').innerHTML = "That is correct";
-}
 
 function trueBtn4() {
     document.querySelector('.question4').innerHTML = "That is not correct";
 }
 
-function falseBtn4() {
-    document.querySelector('.question4').innerHTML = "That is correct";
-}
 
 function trueBtn5() {
     document.querySelector('.question5').innerHTML = "That is not correct";
 }
 
-function falseBtn5() {
-    document.querySelector('.question5').innerHTML = "That is correct";
-}
-
-function trueBtn6() {
-    document.querySelector('.question6').innerHTML = "That is correct";
-}
 
 function falseBtn6() {
     document.querySelector('.question6').innerHTML = "That is not correct";
 }
 
-function trueBtn7() {
-    document.querySelector('.question7').innerHTML = "That is correct";
-}
 
 function falseBtn7() {
     document.querySelector('.question7').innerHTML = "That is not correct";
 }
 
-function trueBtn8() {
-    document.querySelector('.question8').innerHTML = "That is correct";
-}
 
 function falseBtn8() {
     document.querySelector('.question8').innerHTML = "That is not correct";
 }
 
-function trueBtn9() {
-    document.querySelector('.question9').innerHTML = "That is correct";
-}
 
-function falseBtn9() {
-    document.querySelector('.question9').innerHTML = "That is not correct";
-};
+
 
 
 let reset = document.querySelector('.reset')

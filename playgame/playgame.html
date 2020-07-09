@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="playgame.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 </head>
 
 <!-- <body onload="javascript:start()"> -->
@@ -28,6 +29,7 @@
     </div>
     <div class="container">
         <h1>True or False</h1>
+        <!-- <div class="w3-content w3-display-container"> -->
         <div class="card">
             <div class="flip-card">
                 <div class="flip-card-inner" onclick="flip(event)">
@@ -42,7 +44,7 @@
                 </div>
             </div>
             <div class="wrapper">
-                <button class="btn-1" data-question="0">True</button>
+                <button class="btn-1" data-question="0" onclick="trueBtn1()">True</button>
                 <button class="btn-2 add5" data-question="0" onclick="add1()">False</button>
             </div>
         </div>
@@ -60,8 +62,8 @@
                 </div>
             </div>
             <div class="wrapper">
-                <button class="btn-1 add5" data-question="1" onclick="add1()">True</button>
-                <button class="btn-2" data-question="1">False</button>
+                <button class="btn-1 add5" data-question="1" onclick="add2()">True</button>
+                <button class="btn-2" data-question="1" onclick="falseBtn2()">False</button>
             </div>
         </div>
         <div class="card">
@@ -78,8 +80,8 @@
                 </div>
             </div>
             <div class="wrapper">
-                <button class="btn-1" data-question="2">True</button>
-                <button class="btn-2" data-question="2" onclick="add1()">False</button>
+                <button class="btn-1" data-question="2" onclick="trueBtn3()">True</button>
+                <button class="btn-2" data-question="2" onclick="add3()">False</button>
             </div>
         </div>
         <div class="card">
@@ -95,8 +97,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-1" data-question="3">True</button>
-            <button class="btn-2" data-question="3" onclick="add1()">False</button>
+            <button class="btn-1" data-question="3" onclick="trueBtn4()">True</button>
+            <button class="btn-2" data-question="3" onclick="add4()">False</button>
         </div>
         <div class="card">
             <div class="flip-card">
@@ -111,8 +113,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-1" data-question="4">True</button>
-            <button class="btn-2" data-question="4" onclick="add1()">False</button>
+            <button class="btn-1" data-question="4" onclick="trueBtn5()">True</button>
+            <button class="btn-2" data-question="4" onclick="add5()">False</button>
         </div>
         <div class="card">
             <div class="flip-card">
@@ -127,8 +129,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-1" data-question="5" onclick="add1()">True</button>
-            <button class="btn-2" data-question="5">False</button>
+            <button class="btn-1" data-question="5" onclick="add6()">True</button>
+            <button class="btn-2" data-question="5" onclick="falseBtn6()">False</button>
         </div>
         <div class="card">
             <div class="flip-card">
@@ -143,8 +145,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-1" data-question="6" onclick="add1()">True</button>
-            <button class="btn-2" data-question="6">False</button>
+            <button class="btn-1" data-question="6" onclick="add7()">True</button>
+            <button class="btn-2" data-question="6" onclick="falseBtn7()">False</button>
         </div>
         <div class="card">
             <div class="flip-card">
@@ -159,8 +161,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-1" data-question="7" onclick="add1()">True</button>
-            <button class="btn-2" data-question="7">False</button>
+            <button class="btn-1" data-question="7" onclick="add8()">True</button>
+            <button class="btn-2" data-question="7" onclick="falseBtn8()">False</button>
         </div>
         <div class="card">
             <div class="flip-card">
@@ -175,9 +177,12 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-1" data-question="8" onclick="add1()">True</button>
-            <button class="btn-2" data-question="8">False</button>
+            <button class="btn-1" data-question="8" onclick="add9()">True</button>
+            <button class="btn-2" data-question="8" onclick="falseBtn9()">False</button>
         </div>
+        <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div> -->
         <!-- <div class="card">
             <div class="flip-card">
                 <div class="flip-card-inner" onclick="flip(event)">
