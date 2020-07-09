@@ -239,9 +239,13 @@ function falseBtn9() {
 };
 
 
+let reset = document.querySelector('.reset')
 
 
 
+function resetGame() {
+    document.location.href = ""
+}
 
 
 
