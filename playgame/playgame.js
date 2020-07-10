@@ -25,7 +25,6 @@ let questions = document.querySelectorAll('.question');
 
 let question = document.querySelector('.question');
 
-let gameStatus = "Game On";
 
 
 var score = 0;
@@ -238,7 +237,6 @@ let reset = document.querySelector('.reset')
 
 function resetGame() {
     document.location.href = "";
-    gameStatus = "Game Over";
 }
 
 
