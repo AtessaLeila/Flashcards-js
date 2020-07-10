@@ -25,19 +25,13 @@ let questions = document.querySelectorAll('.question');
 
 let question = document.querySelector('.question');
 
+let gameStatus = "Game On";
 
 
 var score = 0;
 let playerScore = document.getElementById("score");
 
 answers = [[false, true], [true, false], [false, true], [false, true], [false, true], [true, false], [true, false], [true, false], [true, false]]
-
-
-// for (i = 0; i < answers.length; i++) {
-//     console.log(answers[i]);
-//     for (j = 0; j < answers[i].length; j++)
-//         console.log(answers[i][j]);
-// }
 
 
 
@@ -47,82 +41,78 @@ total = 0;
 
 
 function add1() {
-    document.querySelector('.question1').style.fontSize = '20px';
+    document.querySelector('.question0').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+    document.querySelector('.question0').style.color = 'green';
+    document.querySelector('.question0').style.fontSize = '30px';
+}
+
+function add2() {
     document.querySelector('.question1').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question1').style.color = 'green';
+    document.querySelector('.question1').style.fontSize = '30px';
 }
 
-function add2() {
-    document.querySelector('.question2').style.fontSize = '20px';
+function add3() {
     document.querySelector('.question2').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question2').style.color = 'green';
+    document.querySelector('.question2').style.fontSize = '30px';
 }
 
-function add3() {
-    document.querySelector('.question3').style.fontSize = '20px';
+function add4() {
     document.querySelector('.question3').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question3').style.color = 'green';
+    document.querySelector('.question3').style.fontSize = '30px';
 }
 
-function add4() {
-    document.querySelector('.question4').style.fontSize = '20px';
+function add5() {
     document.querySelector('.question4').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question4').style.color = 'green';
-}
-
-function add5() {
-    document.querySelector('.question5').style.fontSize = '20px';
-    document.querySelector('.question5').innerHTML = "That is correct"
-    total = total + 1;
-    document.querySelector('.result').innerHTML = total;
-
-    document.querySelector('.question5').style.color = 'green';
+    document.querySelector('.question4').style.fontSize = '30px';
 }
 
 function add6() {
-    document.querySelector('.question6').style.fontSize = '20px';
+    document.querySelector('.question5').innerHTML = "That is correct"
+    total = total + 1;
+    document.querySelector('.result').innerHTML = total;
+    document.querySelector('.question5').style.color = 'green';
+    document.querySelector('.question5').style.fontSize = '30px';
+}
+
+function add7() {
     document.querySelector('.question6').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question6').style.color = 'green';
+    document.querySelector('.question6').style.fontSize = '30px';
 }
 
-function add7() {
-    document.querySelector('.question7').style.fontSize = '20px';
+function add8() {
     document.querySelector('.question7').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question7').style.color = 'green';
-
+    document.querySelector('.question7').style.fontSize = '30px';
 }
 
-function add8() {
-    document.querySelector('.question8').style.fontSize = '20px';
+function add9() {
     document.querySelector('.question8').innerHTML = "That is correct"
     total = total + 1;
     document.querySelector('.result').innerHTML = total;
     document.querySelector('.question8').style.color = 'green';
-}
-
-function add9() {
-    document.querySelector('.question9').style.fontSize = '20px';
-    document.querySelector('.question9').innerHTML = "That is correct"
-    total = total + 1;
-    document.querySelector('.result').innerHTML = total;
-    document.querySelector('.question9').style.color = 'green';
+    document.querySelector('.question8').style.fontSize = '30px';
     setTimeout(function () {
         alert("Game over!")
     }, 1000);
-
-
 }
 
 
@@ -157,15 +147,6 @@ function add9() {
 // }
 
 
-// for (let i = 0; i < answers.length; i++) {
-//     if (answers[i] == "true") {
-//         playerScore.innerHTML = score += 5;
-//         console.log("clicked");
-//     } else {
-//         score = score;
-//     }
-// }
-
 
 // function checkAnswers() {
 //     let correctCount = 0;
@@ -178,97 +159,76 @@ function add9() {
 // }
 // checkAnswers()
 
-//how many of the correct answers equal your answer
+
 
 
 // let wrapper = document.querySelector('.wrapper');
 
-// wrapper.addEventListener('click', (event) => {
-//     const isButton = event.target.nodeName === 'BUTTON';
-//     if (!isButton) {
-//         return;
-//     }
-
-//     console.dir(event.target.id);
-// })
 
 
 
-
-
-// function showDivs(n) {
-//     var i;
-//     var x = document.querySelectorAll(".card");
-//     if (n > x.length) { slideIndex = 1 }
-//     if (n < 1) { slideIndex = x.length }
-//     for (i = 0; i < x.length; i++) {
-//         x[i].style.display = "none";
-//     }
-//     x[slideIndex - 1].style.display = "block";
-// }
 
 
 
 function trueBtn1() {
-    document.querySelector('.question1').style.fontSize = '20px';
-    document.querySelector('.question1').innerHTML = "That is not correct";
-    document.querySelector('.question1').style.color = 'red';
-
+    document.querySelector('.question0').innerHTML = "That is not correct";
+    document.querySelector('.question0').style.color = 'red';
+    document.querySelector('.question0').style.fontSize = '30px';
 }
 
 function falseBtn2() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question2').innerHTML = "That is not correct";
-    document.querySelector('.question2').style.color = 'red';
+    document.querySelector('.question1').innerHTML = "That is not correct";
+    document.querySelector('.question1').style.color = 'red';
+    document.querySelector('.question1').style.fontSize = '30px';
 }
 
 
 function trueBtn3() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question3').innerHTML = "That is not correct";
-    document.querySelector('.question3').style.color = 'red';
+    document.querySelector('.question2').innerHTML = "That is not correct";
+    document.querySelector('.question2').style.color = 'red';
+    document.querySelector('.question2').style.fontSize = '30px';
 }
 
 
 function trueBtn4() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question4').innerHTML = "That is not correct";
-    document.querySelector('.question4').style.color = 'red';
+    document.querySelector('.question3').innerHTML = "That is not correct";
+    document.querySelector('.question3').style.color = 'red';
+    document.querySelector('.question3').style.fontSize = '30px';
 }
 
 
 function trueBtn5() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question5').innerHTML = "That is not correct";
-    document.querySelector('.question5').style.color = 'red';
+    document.querySelector('.question4').innerHTML = "That is not correct";
+    document.querySelector('.question4').style.color = 'red';
+    document.querySelector('.question4').style.fontSize = '30px';
 }
 
 
 function falseBtn6() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question6').innerHTML = "That is not correct";
-    document.querySelector('.question6').style.color = 'red';
+    document.querySelector('.question5').innerHTML = "That is not correct";
+    document.querySelector('.question5').style.color = 'red';
+    document.querySelector('.question5').style.fontSize = '30px';
 }
 
 
 function falseBtn7() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question7').innerHTML = "That is not correct";
-    document.querySelector('.question7').style.color = 'red';
+    document.querySelector('.question6').innerHTML = "That is not correct";
+    document.querySelector('.question6').style.color = 'red';
+    document.querySelector('.question6').style.fontSize = '30px';
 }
 
 
 function falseBtn8() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question8').innerHTML = "That is not correct";
-    document.querySelector('.question8').style.color = 'red';
+    document.querySelector('.question7').innerHTML = "That is not correct";
+    document.querySelector('.question7').style.color = 'red';
+    document.querySelector('.question7').style.fontSize = '30px';
 }
 
 
 function falseBtn9() {
-    document.querySelector('.question6').style.fontSize = '20px';
-    document.querySelector('.question9').innerHTML = "That is not correct";
-    document.querySelector('.question9').style.color = 'red';
+    document.querySelector('.question8').innerHTML = "That is not correct";
+    document.querySelector('.question8').style.color = 'red';
+    document.querySelector('.question8').style.fontSize = '30px';
 }
 
 
@@ -277,14 +237,42 @@ function falseBtn9() {
 let reset = document.querySelector('.reset')
 
 function resetGame() {
-    document.location.href = ""
+    document.location.href = "";
+    gameStatus = "Game Over";
 }
 
 
 
+let flipcards = document.querySelectorAll('.flip-card-inner')
+window.onkeydown = function (event) {
+    if (event.keyCode === 32) {
+        event.preventDefault();
+        for (let i = 0; i < flipcards.length; i++) {
+            flipcards[i].click();
+
+        }
+    }
+
+}
 
 
 
+window.onkeydown = function (event) {
+    if (event.keyCode === 37) {
+        event.preventDefault();
+        trueBtn.click();
 
+    }
+
+}
+
+window.onkeydown = function (event) {
+    if (event.keyCode === 39) {
+        event.preventDefault();
+        falseBtn.click();
+
+    }
+
+}
 
 
