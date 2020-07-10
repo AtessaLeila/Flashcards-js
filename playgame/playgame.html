@@ -11,7 +11,7 @@
 
 <!-- <body onload="javascript:start()"> -->
 
-<body>
+<body onload="myTimer()">
     <div class="sidenav">
         <a onclick="howToPlay()" href="#">Home</a>
         <a onclick="deck()" href="#">Deck of Cards</a>
@@ -26,8 +26,10 @@
             <li>Don't Know Answer: d</li>
         </ul> -->
     </div>
+
     <div class="container">
         <h1>True or False</h1>
+        <div id="timer"></div>
         <div class="card">
             <div class="flip-card">
                 <div class="flip-card-inner" onclick="flip(event)">
