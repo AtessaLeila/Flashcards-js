@@ -30,8 +30,6 @@ let question = document.querySelector('.question');
 var score = 0;
 let playerScore = document.getElementById("score");
 
-answers = [[false, true], [true, false], [false, true], [false, true], [false, true], [true, false], [true, false], [true, false], [true, false]]
-
 
 
 var total;
@@ -114,58 +112,6 @@ function add9() {
         resetGame();
     }, 1000);
 }
-
-
-// answers = [[false, true], [true, false], [false, true], [false, true], [true, false], [false, true], [true, false], [true, false], [true, false]]
-
-
-
-// for (let i = 0; i < questions.length; i++) {
-//     console.log(questions[i])
-// }
-
-
-// for (let i = 0; i < trueBtns.length; i++) {
-//     trueBtns[i].addEventListener("click", check);
-
-//     function check(e) {
-//         console.log(e.target)
-//         let question = parseInt(e.target.dataset.question)
-//         answers[question][1] = true;
-//         console.log(e.target.dataset.question)
-//     };
-// }
-
-// for (let i = 0; i < falseBtns.length; i++) {
-//     falseBtns[i].addEventListener("click", check);
-
-//     function check(e) {
-//         console.log(e.target)
-//         let question = parseInt(e.target.dataset.question)
-//         answers[question][1] = true;
-//     };
-// }
-
-
-
-// function checkAnswers() {
-//     let correctCount = 0;
-//     for (let i = 0; i < answers.length; i++) {
-//         if (answers[i][0] == answers[i][1]) {
-//             correctCount++
-//         }
-//     }
-//     console.log(correctCount)
-// }
-// checkAnswers()
-
-
-
-
-// let wrapper = document.querySelector('.wrapper');
-
-
-
 
 
 
