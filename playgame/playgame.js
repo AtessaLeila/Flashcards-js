@@ -111,6 +111,7 @@ function add9() {
     document.querySelector('.question8').style.fontSize = '30px';
     setTimeout(function () {
         alert("Game over!")
+        resetGame();
     }, 1000);
 }
 
@@ -228,6 +229,10 @@ function falseBtn9() {
     document.querySelector('.question8').innerHTML = "That is not correct";
     document.querySelector('.question8').style.color = 'red';
     document.querySelector('.question8').style.fontSize = '30px';
+    setTimeout(function () {
+        alert("Game over!")
+        resetGame();
+    }, 1000);
 }
 
 
@@ -284,6 +289,7 @@ function myFunction() {
     } else {
         clearInterval(timer);
         alert("Game Over");
+        resetGame();
     }
 }
 function myTimer() {
