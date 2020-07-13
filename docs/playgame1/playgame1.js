@@ -96,7 +96,6 @@ function add9() {
     }, 1000);
 }
 
-myShow = w3.slideshow(".card", 0);
 
 
 function trueBtn1() {
@@ -173,7 +172,7 @@ function falseBtn9() {
     }, 1000);
 }
 
-
+myShow = w3.slideshow(".card", 0);
 
 
 let reset = document.querySelector('.reset')
