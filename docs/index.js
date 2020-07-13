@@ -1,5 +1,5 @@
 function howToPlay() {
-    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/index/index.html")
+    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/docs/index.html")
 }
 
 
