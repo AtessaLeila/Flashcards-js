@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="playgame1.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body onload="myTimer()">
+    <div class="sidenav">
+        <div class="sidenav">
+            <a onclick="howToPlay()" href="#">Home</a>
+            <a onclick="deck()" href="#">Deck of Cards</a>
+            <a onclick="playGame()" href="#">Play Game</a>
+            <h2>Score</h2>
+            <h2 class="result">0</h2>
+            <div id="timer"></div>
+            <button class="reset" onclick="resetGame()">Reset</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="question0">
+                <h1>Mercury is the second smallest planet in the Solar System</h1>
+                <img class="image" src="../img/solar_system.png">
+                <button class="btn-1" data-question="0" onclick="trueBtn1()">True</button>
+                <button class="btn-2 add5" data-question="0" onclick="add1()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question1">
+                <h1>Venus is hotter than Mercury despite being further away from the Sun</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1 add5" data-question="1" onclick="add2()">True</button>
+                <button class="btn-2" data-question="1" onclick="falseBtn2()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question2">
+                <h1>Venus is hotter than Mercury despite being further away from the Sun</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="2" onclick="trueBtn3()">True</button>
+                <button class="btn-2" data-question="2" onclick="add3()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question3">
+                <h1>The Earth's rotation is gradually speeding up</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="3" onclick="trueBtn4()">True</button>
+                <button class="btn-2" data-question="3" onclick="add4()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question4">
+                <h1>Saturn is the fastest spinning planet in the Solar System</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="4" onclick="trueBtn5()">True</button>
+                <button class="btn-2" data-question="4" onclick="add5()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question5">
+                <h1>Jupiter's Surface Gravity is Almost Earth-like</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="5" onclick="add6()">True</button>
+                <button class="btn-2" data-question="5" onclick="falseBtn6()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question6">
+                <h1>Saturn is a flattened ball because it spins so quickly</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="6" onclick="add7()">True</button>
+                <button class="btn-2" data-question="6" onclick="falseBtn7()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question7">
+                <h1>Uranus is known as the “sideways planet”</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="7" onclick="add8()">True</button>
+                <button class="btn-2" data-question="7" onclick="falseBtn8()">False</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="question8">
+                <h1>Neptune is the Coldest Planet in the Solar System</h1>
+                <img src="../img/solar_system.png">
+                <button class="btn-1" data-question="8" onclick="add9()">True</button>
+                <button class="btn-2" data-question="8" onclick="falseBtn9()">False</button>
+            </div>
+        </div>
+        <p>
+            <button class="previous" onclick="myShow.previous()">Previous</button>
+            <button class="next" onclick="myShow.next()">Next</button>
+        </p>
+    </div>
+    <script src="../index/index.js"></script>
+    <script src="playgame1.js"></script>
+</body>
+
+</html>

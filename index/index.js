@@ -8,5 +8,5 @@ function deck() {
 }
 
 function playGame() {
-    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/playgame/playgame.html")
+    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/playgame1/playgame1.html")
 }
