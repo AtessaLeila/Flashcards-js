@@ -1,4 +1,4 @@
-myShow = w3.slideshow(".card", 0);
+
 
 let trueBtns = document.querySelectorAll('.btn-1');
 let falseBtns = document.querySelectorAll('.btn-2');
@@ -96,7 +96,7 @@ function add9() {
     }, 1000);
 }
 
-
+myShow = w3.slideshow(".card", 0);
 
 
 function trueBtn1() {
