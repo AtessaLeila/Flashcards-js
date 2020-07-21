@@ -1,12 +1,12 @@
 function howToPlay() {
-    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/index.html")
+    location.replace("file:///atessaleila.github.io/Flashcards-js/index.html")
 }
 
 
 function deck() {
-    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/deck/deck.html")
+    location.replace("file:///atessaleila.github.io/Flashcards-js/deck/deck.html")
 }
 
 function playGame() {
-    location.replace("file:///Users/atessadailami/Desktop/sei/projects/project4/playgame1/playgame1.html")
+    location.replace("file:///atessaleila.github.io/Flashcards-js/playgame1/playgame1.html")
 }
