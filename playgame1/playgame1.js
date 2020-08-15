@@ -99,17 +99,17 @@ function add9() {
 
 
 function falseBtn1() {
-    document.querySelector('.question1').innerHTML = "That is not correct";
-    document.querySelector('.question1').style.color = 'red';
-    document.querySelector('.question1').style.fontSize = '60px';
-    document.querySelector('.question1').style.textAlign = 'center';
-}
-
-function trueBtn2() {
     document.querySelector('.question0').innerHTML = "That is not correct";
     document.querySelector('.question0').style.color = 'red';
     document.querySelector('.question0').style.fontSize = '60px';
     document.querySelector('.question0').style.textAlign = 'center';
+}
+
+function trueBtn2() {
+    document.querySelector('.question1').innerHTML = "That is not correct";
+    document.querySelector('.question1').style.color = 'red';
+    document.querySelector('.question1').style.fontSize = '60px';
+    document.querySelector('.question1').style.textAlign = 'center';
 }
 
 function trueBtn3() {
